@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <!-- <link rel="stylesheet" href="assets/css/animations.css"> -->
+
+   <title>Codeissance-2.0 - Hack the Grand Line</title>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+   <!--==================== LOADING SCREEN ====================-->
+   <div class="loading-screen" id="loading-screen">
+      <div class="loading-content">
+         <div class="loading-logo">
+            <i class="ri-anchor-fill"></i>
+            <span>CodeStorm</span>
+         </div>
+         <div class="loading-bar">
+            <div class="loading-progress"></div>
+         </div>
+         <p class="loading-text">Setting sail for the Grand Line...</p>
+      </div>
+   </div>
+
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">
+            <i class="ri-anchor-fill"></i>
+            <span>CodeStorm</span>
+         </a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li>
+                  <a href="#home" class="nav__link">Home</a>
+               </li>
+               <li>
+                  <a href="#domains" class="nav__link">Domains</a>
+               </li>
+               <li>
+                  <a href="#crew" class="nav__link">Crew Recruitment</a>
+               </li>
+               <li>
+                  <a href="#timeline" class="nav__link">Timeline</a>
+               </li>
+               <li>
+                  <a href="#sponsors" class="nav__link">Sponsors</a>
+               </li>
+               <li>
+                  <a href="#prizes" class="nav__link">Prizes</a>
+               </li>
+               <li>
+                  <a href="#faq" class="nav__link">FAQ</a>
+               </li>
+            </ul>
+
+            <!--==================== CLOSE BUTTON====================-->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-fill"></i>
+            </div>
+         </div>
+         <!--==================== TOGGLE MENU ====================-->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+         <div class="home__container container">
+            <img src="assets/img/cloud.svg" alt="image" class="home__cloud-1">
+            <img src="assets/img/cloud.svg" alt="image" class="home__cloud-2">
+
+            <div class="home__data" style="margin-top: -3.5rem;">
+               <div class="unstop"
+                  style="margin: 0.5rem 0 1rem 0; display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+                  <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 1rem;">
+                     Powered by
+                     <img
+                        src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/blue/Unstop-Logo-Blue-Small.png"
+                        alt="Unstop Logo" style="height: 28px; vertical-align: middle;">
+                  </span>
+                  <span style="display: flex; align-items: center; gap: 0.5rem; font-size: 1rem;">
+                     Campus Platform
+                     <img src="assets/img/scrollconnect.jpg" alt="Campus Platform Logo"
+                        style="height: 40px; vertical-align: middle; border-radius: 50%;">
+                  </span>
+               </div>
+               <img src="assets/img/Codeissance.png" alt="Codeissance 2.0"
+                  style="max-width: 600px; width: 100%; margin-bottom: 1rem; border-radius: 1rem;">
+               <!-- <h1 class="home__title"> Codeissance 2.0 </h1> -->
+               <h4 class="home__subtitle">Where Dreams Set Sail</h4>
+               <p class="home__description">
+                  Join the greatest coding adventure of your life.
+                  Form your crew, choose your domain, and discover the One Piece of innovation.
+               </p>
+
+
+               <div class="home__buttons">
+                  <a href="https://unstop.com/hackathons/codeissance-2025-thadomal-shahani-engineering-college-tsec-mumbai-1553431" class="home__button primary">Register on Unstop</a>
+               </div>
+            </div>
+
+            <div class="home__images">
+               <div class="home__waves-3" style="background-image: url(assets/img/svg-3.svg) ;"></div>
+               <div class="home__waves-2" style="background-image: url(assets/img/svg-2.svg) ;"></div>
+               <img src="assets/img/sunny-1.png" alt="image" class="home__ship">
+               <div class="home__waves-1" style="background-image: url(assets/img/svg-1.svg) ;"></div>
+            </div>
+         </div>
+      </section>
+
+            <!--==================== COUNTDOWN ====================-->
+<section class="countdown" id="countdown">
+   <div class="countdown__container container">
+      <h2 class="countdown__title">⏳ Registrations Close Soon!</h2>
+      <p class="countdown__subtitle">Don’t miss your chance to join the ultimate coding adventure.<br>Registrations close on <b>23rd September, 11:00 PM</b>.</p>
+
+      <div class="countdown__timer">
+         <div class="countdown__item">
+            <span id="days" class="countdown__number">00</span>
+            <span class="countdown__label">Days</span>
+         </div>
+         <div class="countdown__item">
+            <span id="hours" class="countdown__number">00</span>
+            <span class="countdown__label">Hours</span>
+         </div>
+         <div class="countdown__item">
+            <span id="minutes" class="countdown__number">00</span>
+            <span class="countdown__label">Minutes</span>
+         </div>
+         <div class="countdown__item">
+            <span id="seconds" class="countdown__number">00</span>
+            <span class="countdown__label">Seconds</span>
+         </div>
+      </div>
+
+      <a href="https://unstop.com/hackathons/codeissance-2025-thadomal-shahani-engineering-college-tsec-mumbai-1553431" class="countdown__button">Register Now</a>
+   </div>
+</section>
+
+<!-- Countdown Script -->
+<script>
+   // Set the date we're counting down to
+   const countDownDate = new Date("Sep 23, 2025 23:00:00").getTime();
+
+   const x = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      // If the countdown is over
+      if (distance < 0) {
+         clearInterval(x);
+         document.querySelector(".countdown__timer").innerHTML = "<h3 class='countdown__expired'>Registrations Closed</h3>";
+      }
+   }, 1000);
+</script>
+
+
+      <!--==================== DOMAINS ====================-->
+      <section class="domains" id="domains">
+         <div class="domains__container container">
+            <div class="domains__header">
+               <h2 class="domains__title">Set Sail for Innovation</h2>
+               <p class="domains__subtitle">Select your domain and embark on the ultimate coding adventure</p>
+            </div>
+
+            <div class="domains__grid">
+               <!-- Web/App Domain -->
+               <div class="domain__card" data-domain="web">
+                  <div class="domain__card-inner">
+                     <div class="domain__icon">
+                        <i class="ri-global-line"></i>
+                     </div>
+                     <h3 class="domain__title">Web/App</h3>
+                     <p class="domain__description">
+                        Set sail to craft the next era of digital voyages. Build web and mobile applications that shine like hidden treasures and deliver legendary experiences to every crew that discovers them.
+                     </p>
+                     <!-- <div class="domain__tech">
+                        <span class="tech__tag">React</span>
+                        <span class="tech__tag">Node.js</span>
+                        <span class="tech__tag">Flutter</span>
+                        <span class="tech__tag">Django</span>
+                     </div> -->
+                     <div class="domain__stats">
+                        <div class="domain__stat">
+                           <span class="stat__value">20</span>
+                           <span class="stat__label">Teams</span>
+                        </div>
+                        <div class="domain__stat">
+                           <span class="stat__value">₹20K</span>
+                           <span class="stat__label">Prize</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="domain__card-bg"></div>
+               </div>
+
+               <!-- AI/ML Domain -->
+               <div class="domain__card" data-domain="ai">
+                  <div class="domain__card-inner">
+                     <div class="domain__icon">
+                        <i class="ri-brain-line"></i>
+                     </div>
+                     <h3 class="domain__title">AI/ML</h3>
+                     <p class="domain__description">
+                        Harness the power of a true Devil Fruit, the strength of Artificial Intelligence and Machine Learning. Create intelligent systems that can chart unknown seas and outsmart any storm that comes their way.
+                     </p>
+                     <!-- <div class="domain__tech">
+                        <span class="tech__tag">TensorFlow</span>
+                        <span class="tech__tag">PyTorch</span>
+                        <span class="tech__tag">OpenAI</span>
+                        <span class="tech__tag">Computer Vision</span>
+                     </div> -->
+                     <div class="domain__stats">
+                        <div class="domain__stat">
+                           <span class="stat__value">15</span>
+                           <span class="stat__label">Teams</span>
+                        </div>
+                        <div class="domain__stat">
+                           <span class="stat__value">₹20K</span>
+                           <span class="stat__label">Prize</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="domain__card-bg"></div>
+               </div>
+
+               <!-- Social Cause Domain -->
+               <div class="domain__card" data-domain="social">
+                  <div class="domain__card-inner">
+                     <div class="domain__icon">
+                        <i class="ri-heart-line"></i>
+                     </div>
+                     <h3 class="domain__title">Industry</h3>
+                     <p class="domain__description">
+                        Become the hero of your own Grand Line. Forge technologies that uplift communities, steer change, and leave behind a legacy as great as any Pirate King’s treasure.
+                     </p>
+                     <!-- <div class="domain__tech">
+                        <span class="tech__tag">Blockchain</span>
+                        <span class="tech__tag">IoT</span>
+                        <span class="tech__tag">Data Analytics</span>
+                        <span class="tech__tag">Sustainability</span>
+                     </div> -->
+                     <div class="domain__stats">
+                        <div class="domain__stat">
+                           <span class="stat__value">15</span>
+                           <span class="stat__label">Teams</span>
+                        </div>
+                        <div class="domain__stat">
+                           <span class="stat__value">₹20K</span>
+                           <span class="stat__label">Prize</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="domain__card-bg"></div>
+               </div>
+            </div>
+
+
+         </div>
+      </section>
+
+
+      <!--crew Recruitment-->
+      <section class="crew" id="crew">
+         <div class="crew__container">
+            <div class="crew__header">
+               <h2 class="crew__title">Voyage Details</h2>
+               <p class="crew__subtitle">Embark on a legendary coding adventure where innovation, teamwork, and
+                  creativity set sail!</p>
+            </div>
+
+            <div class="crew__poster">
+               <img src="./assets/img/rolled.png" alt="Rolled Poster" class="poster rolled" id="crewPoster">
+            </div>
+         </div>
+      </section>
+
+      <!--==================== TIMELINE ====================-->
+
+      <section class="timeline" id="timeline">
+         <div class="timeline__header" style="text-align:center; margin-bottom:2.5rem;">
+            <h2
+               style="font-family: var(--second-font, 'Cormorant Garamond', serif); font-size:2.5rem; font-weight:700; color:#111; letter-spacing:1px;">
+               TIMELINE</h2>
+         </div>
+         <div class="timeline">
+
+            <!-- Registration Opens -->
+
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull1.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date timeline__date--right">Day 1</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title">DAY 1 26th September 2025</h2>
+               <p class="timeline__paragraph">
+                  08:00 AM – Reporting & Registrations
+               </p>
+            </div>
+
+            <!-- Registration Closes -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull2.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date">Day 3</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title">10:00 AM – Inauguration Ceremony</h2>
+            </div>
+
+            <!-- Hackathon Kick-off -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull3.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date timeline__date--right">Day 4</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title">Hackathon Kick-off</h2>
+               <p class="timeline__paragraph">
+                  11:00 AM – 24-Hour Onsite Hackathon Begins
+               </p>
+            </div>
+
+            <!-- Round 1 -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull4.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date">Day 5</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title">01:30 PM – Lunch</h2>
+            </div>
+
+            <!-- Round 2 -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull5.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date timeline__date--right">Day 6</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title">07:00 PM – Mentoring Round</h2>
+            </div>
+
+
+            <!-- Dinner -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull10.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date">Day 7</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title"> 09:00 PM – Dinner</h2>
+            </div>
+            
+
+            <!-- Mentorship -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull6.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date">Day 7</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title">DAY 2 – 27th September 2025</h2></h2>
+               <p class="timeline__paragraph">
+                  11:00 AM – Internal Judging Round
+               </p>
+            </div>
+            
+
+            <!-- Final Submissions -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull7.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date timeline__date--right">Day 8</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title">12:30 PM – Announcement of Shortlisted Teams</h2>
+            </div>
+
+            <!-- Judging -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull8.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date">Day 9</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bg">
+               <h2 class="timeline__title">Judging & Evaluation</h2>
+               <p class="timeline__paragraph">
+                  02:00 PM – 04:00 PM – Final Judging Round
+               </p>
+            </div>
+
+
+            
+            <!-- Closing -->
+            <div class="timeline__middle">
+               <div class="timeline__progress-line"></div>
+               <div class="timeline__icon">
+                  <img src="assets/img/skull9.png" alt="skull icon" />
+               </div>
+            </div>
+            <!-- <div class="timeline__component">
+               <div class="timeline__date timeline__date--right">Final Day</div>
+            </div> -->
+            <div class="timeline__component timeline__component--bottom timeline__component--bg">
+               <h2 class="timeline__title">Closing Ceremony & Results</h2>
+               <p class="timeline__paragraph">
+                  05:00 PM – Winner Announcement & Closing Ceremony
+               </p>
+            </div>
+
+         </div>
+      </section>
+
+
+      <!--==================== SPONSORS ====================-->
+
+      <!--==================== PRIZES ====================-->
+      <section class="prizes" id="prizes">
+         <div class="prizes__container container">
+            <div class="prizes__header">
+               <h2 class="prizes__title">The One Piece Awaits</h2>
+               <p class="prizes__subtitle">Worth more than gold - priceless opportunities and recognition</p>
+            </div>
+
+            <!-- Treasure Chest Animation -->
+            <div class="prizes__chest" aria-hidden="true">
+               <img src="assets/img/closed_chest.png" alt="Closed treasure chest" class="chest__img chest--closed">
+               <img src="assets/img/open_chest.png" alt="Open treasure chest" class="chest__img chest--open">
+
+               <div class="treasure__cards">
+                  <div class="treasure__card">
+                     <div class="treasure__fruit"><img src="assets/img/devil1.png" alt="Web/App Devil Fruit"></div>
+                     <div class="treasure__card-content">
+                        <span class="treasure__label">Web/App</span>
+                        <span class="treasure__amount">₹20,000</span>
+                     </div>
+                  </div>
+                  <div class="treasure__card">
+                     <div class="treasure__fruit"><img src="assets/img/devil2.png" alt="AI/ML Devil Fruit"></div>
+                     <div class="treasure__card-content">
+                        <span class="treasure__label">AI/ML</span>
+                        <span class="treasure__amount">₹20,000</span>
+                     </div>
+                  </div>
+                  <div class="treasure__card">
+                     <div class="treasure__fruit"><img src="assets/img/devil3.png" alt="Social Cause Devil Fruit"></div>
+                     <div class="treasure__card-content">
+                        <span class="treasure__label">Industry</span>
+                        <span class="treasure__amount">₹20,000</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="prizes__open-trigger"></div>
+
+            <!-- <div class="prizes__grid">
+               <div class="prize__card first">
+                  <div class="prize__fruit"><img src="assets/img/devil1.png" alt="Web/App Devil Fruit"></div>
+                  <div class="prize__card-content">
+                     <h3>Web/App</h3>
+                     <div class="prize__amount">₹20,000</div>
+                     <ul class="prize__benefits">
+                         <li>Domain Winner Certificate</li>
+                        <li>Direct entry to top tech companies</li>
+                        <li>6-month mentorship program</li>
+                        <li>Premium tech swag package</li> 
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="prize__card second">
+                  <div class="prize__fruit"><img src="assets/img/devil2.png" alt="AI/ML Devil Fruit"></div>
+                  <div class="prize__card-content">
+                     <h3>AI/ML</h3>
+                     <div class="prize__amount">₹20,000</div>
+                      <ul class="prize__benefits">
+                        <li>Domain Winner Certificate</li>
+                        <li>AI/ML internship opportunities</li>
+                        <li>6-month mentorship program</li>
+                        <li>Premium tech swag package</li>
+                     </ul> 
+                  </div>
+               </div>
+
+               <div class="prize__card third">
+                  <div class="prize__fruit"><img src="assets/img/devil3.png" alt="Industry Devil Fruit"></div>
+                  <div class="prize__card-content">
+                     <h3>Industry Domain</h3>
+                     <div class="prize__amount">₹20,000</div>
+                     <ul class="prize__benefits">
+                         <li>Domain Winner Certificate</li>
+                        <li>Social impact project funding</li>
+                        <li>6-month mentorship program</li>
+                        <li>Premium tech swag package</li>
+                     </ul>
+                  </div>
+               </div>
+            </div> -->
+
+         </div>
+      </section>
+
+
+      <!--==================== SPONSORS ====================-->
+      <section class="sponsors" id="sponsors">
+         <div class="sponsors__container container">
+            <div class="sponsors__header">
+               <h2 class="sponsors__title">Proudly Sponsored By</h2>
+               <p class="sponsors__subtitle">Amazing companies that make this adventure possible</p>
+            </div>
+
+            <div class="sponsors__scroll-container">
+               <div class="sponsors__scroll-track">
+                  <!-- First set of sponsors -->
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://scrollconnect.com/" target="_blank">
+                           <img src="./assets/img/scrollconnect_logo.png" alt="Scroll Connect"
+                              style="width: 120px; height: auto;">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://unstop.com/" target="_blank">
+                           <img
+                              src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/blue/Unstop-Logo-Blue-Small.png"
+                              alt="Unstop">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://www.geeksforgeeks.org/" target="_blank">
+                           <img src="./assets/img/gfg_logo.png" alt="GeeksforGeeks">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://missioncareer.com/" target="_blank">
+                           <img src="./assets/img/missioncareer_logo.png" alt="Mission Career">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://www.idp.com/" target="_blank">
+                           <img src="./assets/img/idp_logo.png" alt="IDP">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://bankofindia.co.in/" target="_blank">
+                           <img src="./assets/img/boi_logo.png" alt="Bank of India">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://crescatfinserv.com/" target="_blank">
+                           <img src="./assets/img/crescat_logo.jpg" alt="Crescat" width="190" height="130">
+
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                       
+                          
+                           <a href="https://www.postman.com/" target="_blank">
+                              <img src="./assets/img/postman_logo.png" alt="Postman">
+                              
+                           </a>
+                     </div>
+                  </div>
+
+                  <!-- Duplicate set for seamless loop -->
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://scrollconnect.com/" target="_blank">
+                           <img src="./assets/img/scrollconnect_logo.png" alt="Scroll Connect"
+                              style="width: 120px; height: auto;">
+
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://unstop.com/" target="_blank">
+                           <img
+                              src="https://d8it4huxumps7.cloudfront.net/uploads/images/unstop/branding-guidelines/logos/blue/Unstop-Logo-Blue-Small.png"
+                              alt="Unstop">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://www.geeksforgeeks.org/" target="_blank">
+                           <img src="./assets/img/gfg_logo.png" alt="GeeksforGeeks">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://missioncareer.com/" target="_blank">
+                           <img src="./assets/img/missioncareer_logo.png" alt="Mission Career">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://www.idp.com/" target="_blank">
+                           <img src="./assets/img/idp_logo.png" alt="IDP">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://bankofindia.co.in/" target="_blank">
+                           <img src="./assets/img/boi_logo.png" alt="Bank of India">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://crescatfinserv.com//" target="_blank">
+                           <img src="./assets/img/crescat_logo.jpg" alt="Crescat" width="190" height="130">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <a href="https://postman.com/" target="_blank">
+                           <img src="./assets/img/postman_logo.png" alt="Postman">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+      <!-- <section class="sponsors" id="sponsors">
+         <div class="sponsors__container container">
+            <div class="sponsors__header">
+               <h2 class="sponsors__title">Proudly Sponsored By</h2>
+               <p class="sponsors__subtitle">Amazing companies that make this adventure possible</p>
+            </div>
+
+            <div class="sponsors__scroll-container">
+               <div class="sponsors__scroll-track">
+
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-building-line"></i>
+                        <span>Sponsor 1</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-rocket-line"></i>
+                        <span>Sponsor 2</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-cpu-line"></i>
+                        <span>Sponsor 3</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-global-line"></i>
+                        <span>Sponsor 4</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-cloud-line"></i>
+                        <span>Sponsor 5</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-database-line"></i>
+                        <span>Sponsor 6</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-shield-line"></i>
+                        <span>Sponsor 7</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-code-s-slash-line"></i>
+                        <span>Sponsor 8</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-brain-line"></i>
+                        <span>Sponsor 9</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-lightbulb-line"></i>
+                        <span>Sponsor 10</span>
+                     </div>
+                  </div>
+
+
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-building-line"></i>
+                        <span>Sponsor 1</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-rocket-line"></i>
+                        <span>Sponsor 2</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-cpu-line"></i>
+                        <span>Sponsor 3</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-global-line"></i>
+                        <span>Sponsor 4</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-cloud-line"></i>
+                        <span>Sponsor 5</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-database-line"></i>
+                        <span>Sponsor 6</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-shield-line"></i>
+                        <span>Sponsor 7</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-code-s-slash-line"></i>
+                        <span>Sponsor 8</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-brain-line"></i>
+                        <span>Sponsor 9</span>
+                     </div>
+                  </div>
+                  <div class="sponsor__item">
+                     <div class="sponsor__logo">
+                        <i class="ri-lightbulb-line"></i>
+                        <span>Sponsor 10</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section> -->
+
+      <!--==================== FAQ ====================-->
+      <section class="faq" id="faq">
+         <div class="faq__container container">
+            <div class="faq__header">
+               <h2 class="faq__title">Frequently Asked Questions</h2>
+               <p class="faq__subtitle">Everything you need to know about your adventure</p>
+            </div>
+
+            <div class="faq__content">
+
+               <div class="faq__item">
+                  <div class="faq__question">
+                     <h3>Who can participate?</h3>
+                     <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                  <div class="faq__answer">
+                     <p>The hackathon is open for Students from all over India. Undergraduate Engineering Students of all branches are
+                        eligible to participate.</p>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="faq__item">
+                  <div class="faq__question">
+                     <h3>How much will it cost?</h3>
+                     <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                  <div class="faq__answer">
+                     <p>Registration for Codeissance 2025 is completely free.</p>
+                  </div>
+               </div>
+
+               <div class="faq__item">
+                  <div class="faq__question">
+                     <h3>How can I apply?</h3>
+                     <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                  <div class="faq__answer">
+                     <p>The registration can be done by simply clicking the Unstop button above and filling up the form,
+                        where you will mention you and your team details.</p>
+                  </div>
+               </div>
+
+               <div class="faq__item">
+                  <div class="faq__question">
+                     <h3>What are the prizes to be won?</h3>
+                     <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                  <div class="faq__answer">
+                     <p>Winners will receive cash prizes up to ₹20,000 from each domain, mentorship opportunities with
+                        industry leaders. Plus,
+                        bragging rights as the ultimate Codeissance champions!</p>
+                  </div>
+               </div>
+
+               <div class="faq__item">
+                  <div class="faq__question">
+                     <h3>What if I do not know how to code?</h3>
+                     <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                  <div class="faq__answer">
+                     <p>No worries, Interest in learning and working with technology is much more important than your
+                        current experience level. Beginners are also invited.</p>
+                  </div>
+               </div>
+
+               <div class="faq__item">
+                  <div class="faq__question">
+                     <h3>Can I attend the Hackathon remotely?</h3>
+                     <i class="ri-arrow-down-s-line"></i>
+                  </div>
+                  <div class="faq__answer">
+                     <p>The hackathon will be conducted entirely in offline mode.</p>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+      </section>
+
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container"
+         style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 1.5rem; padding: 2rem 0 0.5rem 0;">
+
+         <!-- Logo & Description -->
+         <div style="flex: 1 1 180px; min-width: 160px;">
+            <div class="footer__logo"
+               style="display: flex; align-items: center; font-weight: bold; font-size: 1.2rem; margin-bottom: 0.5rem; color: #fff;">
+               <i class="ri-anchor-fill"></i>
+               <span style="margin-left: 0.5rem;">CodeStorm</span>
+            </div>
+            <p style="font-size: 0.95rem; margin-bottom: 0.5rem; color: #e0e0e0; line-height: 1.4;">
+               Embark on the greatest coding adventure of your life.
+               Join Codeissance 2.0 and discover the One Piece of innovation.
+            </p>
+         </div>
+
+         <!-- Quick Links -->
+         <div style="flex: 1 1 120px; min-width: 110px;">
+            <h4
+               style="font-size: 1.08rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff; letter-spacing: 0.5px;">
+               QUICK LINKS</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #e0e0e0; font-size: 0.95rem;">
+               <li style="margin-bottom: 0.3rem;"><a href="#home"
+                     style="color: #e0e0e0; text-decoration: none;">Home</a></li>
+               <li style="margin-bottom: 0.3rem;"><a href="#domains"
+                     style="color: #e0e0e0; text-decoration: none;">Domains</a></li>
+               <li style="margin-bottom: 0.3rem;"><a href="#crew"
+                     style="color: #e0e0e0; text-decoration: none;">Crew</a></li>
+               <li><a href="#timeline" style="color: #e0e0e0; text-decoration: none;">Timeline</a></li>
+            </ul>
+         </div>
+
+         <!-- Contact -->
+         <div style="flex: 1 1 120px; min-width: 110px;">
+            <h4
+               style="font-size: 1.08rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff; letter-spacing: 0.5px;">
+               CONTACT</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; color: #e0e0e0; font-size: 0.95rem;">
+               <li style="display: flex; align-items: center; margin-bottom: 0.3rem;">
+                  <i class="ri-mail-line" style="margin-right: 0.5rem;"></i>
+                  <a href="mailto:tseccodestorm@gmail.com"
+                     style="color: #e0e0e0; text-decoration: none;">tseccodestorm@gmail.com</a>
+               </li>
+               <li style="display: flex; align-items: center;">
+                  <i class="ri-phone-line" style="margin-right: 0.5rem;"></i>
+                  <a href="tel:+91-88798801XX" style="color: #e0e0e0; text-decoration: none;">+91 88509 67604</a>
+               </li>
+               <li style="display: flex; align-items: center;">
+                  <i class="ri-phone-line" style="margin-right: 0.5rem;"></i>
+                  <a href="tel:+91-88798801XX" style="color: #e0e0e0; text-decoration: none;">+91 70399 54217</a>
+               </li>
+            </ul>
+         </div>
+
+
+         <!-- Social -->
+         <div style="flex: 0 1 120px; min-width: 100px; text-align: center;">
+            <h4
+               style="font-size: 1.08rem; font-weight: 700; margin-bottom: 0.5rem; color: #fff; letter-spacing: 0.5px;">
+               FOLLOW US</h4>
+            <div style="display: flex; flex-direction: column; gap: 0.7rem; align-items: center;">
+               <a href="https://www.instagram.com/tseccodestorm?igsh=N2NmM2c2bzllMHNn" title="Instagram" target="_blank"
+                  rel="noopener noreferrer"
+                  style="display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; background: #E1306C; box-shadow: 0 2px 6px #0001;">
+                  <i class="ri-instagram-fill" style="color: #fff; font-size: 1.3rem;"></i>
+               </a>
+               <a href="https://www.linkedin.com/company/tsec-codestorm/" title="LinkedIn" target="_blank"
+                  rel="noopener noreferrer"
+                  style="display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; background: #0A66C2; box-shadow: 0 2px 6px #0001;">
+                  <i class="ri-linkedin-fill" style="color: #fff; font-size: 1.3rem;"></i>
+               </a>
+               <a href="https://x.com/TCodestorm" title="Twitter" target="_blank" rel="noopener noreferrer"
+                  style="display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; background: #1DA1F2; box-shadow: 0 2px 6px #0001;">
+                  <i class="ri-twitter-fill" style="color: #fff; font-size: 1.3rem;"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <!-- Copy -->
+      <div class="footer__copy"
+         style="text-align: center; font-size: 0.95rem; margin-top: 1.2rem; padding-bottom: 0.5rem; opacity: 0.85; border-top: 1px solid #bdbdbd22;">
+         <p style="margin: 0;">&copy; 2025 CodeStorm. All rights reserved. | Made with ❤️ for the coding community</p>
+      </div>
+   </footer>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+</html>
