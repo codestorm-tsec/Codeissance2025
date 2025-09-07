@@ -221,7 +221,7 @@ const poster = document.getElementById("crewPoster");
 
   poster.addEventListener("click", () => {
     if (poster.classList.contains("rolled")) {
-      poster.src = "./assets/img/Wanted.jpg"; // replace with your wanted poster image
+      poster.src = "./assets/img/Wanted.png"; // replace with your wanted poster image
       poster.classList.remove("rolled");
       poster.classList.add("wanted");
     } else {
